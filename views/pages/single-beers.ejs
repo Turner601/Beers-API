@@ -1,0 +1,35 @@
+<%- include('../partials/header'); %>
+
+<main class="main main-single-beers container text-center">
+    <h2 class="main-h2">
+        <%= name %>
+    </h2>
+    <section class="section section-single-beers">
+        <figure class="figure figure-single-beers">
+            <img src="/media/Beer.png" alt="<%= data.name %>" class="img-fluid beer-image">
+            <figcaption class="figcaption figcap-single-beers">
+                <b><u>Name</u></b>
+            </figcaption>
+            <figcaption class="figcaption figcap-single-beers">
+                <%= data.name %>
+            </figcaption>
+            <figcaption class="figcaption figcap-single-beers">
+                <b><u>Price</u></b>
+            </figcaption>
+            <figcaption class="figcaption figcap-single-beers">
+                <%= data.price %>
+            </figcaption>
+            <figcaption class="figcaption figcap-single-beers">
+                <b><u>Rating</u></b>
+            </figcaption>
+            <figcaption class="figcaption figcap-single-beers">
+                <%= data.rating.reviews %>
+            </figcaption>
+            <figcaption class="figcaption figcap-single-beers">
+                <%= data.rating.average %>
+            </figcaption>
+        </figure>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %>

@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #eaeae3;
+}
+
+header {
+    padding: 25px 0;
+    background: black;
+}
+
+.home-header {
+    padding: 25px 0;
+    text-transform: capitalize;
+}
+
+header h1 {
+    color: dodgerblue;
+}
+
+.nav-link {
+    color: red;
+    font-size: 20px;
+}
+
+.bar-image {
+    padding-bottom: 50px;
+}
+
+.main-h2 {
+    padding: 25px 0;
+    text-transform: capitalize;
+}
+
+footer {
+    padding: 25px 0;
+    background: black;
+}
+
+footer p {
+    color: dodgerblue;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+footer a {
+    color: red;
+    text-decoration: none;
+}

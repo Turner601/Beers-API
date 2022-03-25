@@ -1,0 +1,25 @@
+<%- include('../partials/header'); %>
+
+<main class="main main-stouts-beers container text-center">
+    <h2 class="main-h2">
+        <%= name %>
+    </h2>
+    <section class="section section-stouts-beers">
+        <div class="row">
+            <% data.forEach(item => { %>
+                <div class="col-md-2">
+                    <figure class="figure figure-stouts-beers">
+                        <a href="/beers/stouts/<%= item.id %>">
+                            <img src="/media/Beer.png" alt="<%= item.name %>" class="img-fluid beer-image">
+                            <figcaption class="figcaption figcap-stouts">
+                                <%= item.name %>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %>
